@@ -21,14 +21,7 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/register" element={<RegisterScreen />} />
-        <Route
-          path="/mainscreen"
-          element={<PrivateRoute element={MainScreen} />}
-        />
-        <Route
-          path="/profile"
-          element={<PrivateRoute element={ProfileScreen} />}
-        />
+        <Route path="/mainscreen" element={<MainScreen />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

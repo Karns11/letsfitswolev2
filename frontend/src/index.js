@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import RegisterScreen from "./screens/RegisterScreen";
 import { Provider } from "react-redux";
 import store from "./store";
-// import MainScreen from "./screens/MainScreen";
+import MainScreen from "./screens/MainScreen";
 // // import PrivateRoute from "./components/PrivateRoute";
 // import ProfileScreen from "./screens/ProfileScreen";
 // import WorkoutScreen from "./screens/WorkoutScreen";
@@ -28,8 +28,8 @@ const router = createBrowserRouter(
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
 
-      {/* <Route path="/mainscreen" element={<MainScreen />} />
-      <Route path="/profile" element={<ProfileScreen />} />
+      <Route path="/mainscreen" element={<MainScreen />} />
+      {/* <Route path="/profile" element={<ProfileScreen />} />A
       <Route path="/users/workout/:id" element={<WorkoutScreen />} />
       <Route path="/profile/addfriends" element={<AddFriendsScreen />} />
       <Route path="/profile/friends/:friendId" element={<FriendScreen />} /> */}

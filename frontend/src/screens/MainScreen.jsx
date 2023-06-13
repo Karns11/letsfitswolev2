@@ -137,7 +137,7 @@ const MainScreen = () => {
 
   return (
     <div>
-      {/* <MainHeader /> */}
+      <MainHeader />
       <Container className="mt-5">
         <Typography variant="h2" className="text-center">
           Welcome Back, {userInfo && userInfo.firstName}

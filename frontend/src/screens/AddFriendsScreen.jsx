@@ -67,7 +67,7 @@ const AddFriendsScreen = () => {
   if (isLoadingUsers || isLoadingProfile) {
     return (
       <div>
-        {/* <MainHeader /> */}
+        <MainHeader />
         <Link
           className="btn btn-light my-4 mx-5"
           to={previousPagePath || "/profile"}
@@ -84,7 +84,7 @@ const AddFriendsScreen = () => {
   if (usersError) {
     return (
       <div>
-        {/* <MainHeader /> */}
+        <MainHeader />
         <Link
           className="btn btn-light my-4 mx-5"
           to={previousPagePath || "/profile"}
@@ -105,7 +105,7 @@ const AddFriendsScreen = () => {
 
   return (
     <div>
-      {/* <MainHeader /> */}
+      <MainHeader />
       <Link
         className="btn btn-light my-4 mx-5"
         to={previousPagePath || "/profile"}

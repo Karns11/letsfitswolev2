@@ -140,7 +140,7 @@ const MainScreen = () => {
       <MainHeader />
       <Container className="mt-5">
         <Typography variant="h2" className="text-center">
-          Welcome Back, {userInfo.firstName}
+          Welcome Back, {userInfo && userInfo.firstName}
         </Typography>
         <Row>
           <Col md={6}>
@@ -283,9 +283,12 @@ const MainScreen = () => {
 
               <div style={{ maxHeight: "310px", overflowY: "auto" }}>
                 <List>
-                  {!userInfo.friends ? (
+                  {!userInfo ? (
+                    <Typography>No friends</Typography>
+                  ) : !userInfo.friends ? (
                     <Typography>No friends</Typography>
                   ) : (
+                    userInfo.friends &&
                     userInfo.friends.map((friend) => (
                       <Link
                         key={friend.user}

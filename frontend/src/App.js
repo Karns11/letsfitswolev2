@@ -7,6 +7,9 @@ import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import MainScreen from "./screens/MainScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+import WorkoutScreen from "./screens/WorkoutScreen";
+import AddFriendsScreen from "./screens/AddFriendsScreen";
+import FriendScreen from "./screens/FriendScreen";
 
 const PrivateRoute = ({ element: Element, ...rest }) => {
   const { userInfo } = useSelector((state) => state.auth);
@@ -21,6 +24,26 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/register" element={<RegisterScreen />} />
+        <Route
+          path="/mainscreen"
+          element={<PrivateRoute element={MainScreen} />}
+        />
+        <Route
+          path="/profile"
+          element={<PrivateRoute element={ProfileScreen} />}
+        />
+        <Route
+          path="/users/workout/:id"
+          element={<PrivateRoute element={WorkoutScreen} />}
+        />
+        <Route
+          path="/profile/addfriends"
+          element={<PrivateRoute element={AddFriendsScreen} />}
+        />
+        <Route
+          path="/profile/friends/:friendId"
+          element={<PrivateRoute element={FriendScreen} />}
+        />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

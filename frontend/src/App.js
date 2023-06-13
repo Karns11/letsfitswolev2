@@ -24,26 +24,11 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/register" element={<RegisterScreen />} />
-        <Route
-          path="/mainscreen"
-          element={<PrivateRoute element={MainScreen} />}
-        />
-        <Route
-          path="/profile"
-          element={<PrivateRoute element={ProfileScreen} />}
-        />
-        <Route
-          path="/users/workout/:id"
-          element={<PrivateRoute element={WorkoutScreen} />}
-        />
-        <Route
-          path="/profile/addfriends"
-          element={<PrivateRoute element={AddFriendsScreen} />}
-        />
-        <Route
-          path="/profile/friends/:friendId"
-          element={<PrivateRoute element={FriendScreen} />}
-        />
+        <Route path="/mainscreen" element={<p>TEst</p>} />
+        <Route path="/profile" element={<p>TEst</p>} />
+        <Route path="/users/workout/:id" element={<p>TEst</p>} />
+        <Route path="/profile/addfriends" element={<p>TEst</p>} />
+        <Route path="/profile/friends/:friendId" element={<p>TEst</p>} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

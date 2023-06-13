@@ -54,7 +54,7 @@ const FriendScreen = () => {
 
   return (
     <div>
-      <MainHeader />
+      {/* <MainHeader /> */}
       <Link
         className="btn btn-light my-4 mx-5"
         to={previousPagePath || "/profile"}

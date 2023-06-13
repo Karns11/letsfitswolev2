@@ -132,7 +132,7 @@ const WorkoutScreen = () => {
 
   return (
     <div className="workout-screen">
-      <MainHeader />
+      {/* <MainHeader /> */}
       <Container>
         <Link className="btn btn-light mt-3" to="/mainscreen">
           Go Back

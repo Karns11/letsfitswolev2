@@ -4,7 +4,6 @@ import MainHeader from "../components/MainHeader";
 const MainScreen2 = () => {
   return (
     <div>
-      <MainHeader />
       <div>Main Screen</div>
     </div>
   );

@@ -77,7 +77,7 @@ const ProfileScreen = () => {
 
   return (
     <div className="profile-screen">
-      <MainHeader />
+      {/* <MainHeader /> */}
 
       <Link className="btn btn-light my-4 mx-5" to="/mainscreen">
         Go Back

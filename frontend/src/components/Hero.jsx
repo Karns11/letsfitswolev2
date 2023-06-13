@@ -1,13 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleHeroClick = (e) => {
-    e.preventDefault();
-    navigate("/login");
-  };
+  // const handleHeroClick = (e) => {
+  //   e.preventDefault();
+  //   navigate("/login");
+  // };
 
   return (
     <div id="Home" className="text-white bg-black">
@@ -21,12 +21,11 @@ const Hero = () => {
         <p className="md:text-2xl text-xl font-bold text-gray-500">
           TAKE YOUR WORKOUTS TO THE NEXT LEVEL
         </p>
-        <button
-          onClick={handleHeroClick}
-          className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black"
-        >
-          Get Started
-        </button>
+        <Link to={"/login"}>
+          <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
+            Get Started
+          </button>
+        </Link>
       </div>
     </div>
   );

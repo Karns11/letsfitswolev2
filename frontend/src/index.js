@@ -14,12 +14,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import RegisterScreen from "./screens/RegisterScreen";
 import { Provider } from "react-redux";
 import store from "./store";
-// import MainScreen from "./screens/MainScreen";
-// import PrivateRoute from "./components/PrivateRoute";
-// import ProfileScreen from "./screens/ProfileScreen";
-// import WorkoutScreen from "./screens/WorkoutScreen";
-// import AddFriendsScreen from "./screens/AddFriendsScreen";
-// import FriendScreen from "./screens/FriendScreen";
+import MainScreen from "./screens/MainScreen";
+import PrivateRoute from "./components/PrivateRoute";
+import ProfileScreen from "./screens/ProfileScreen";
+import WorkoutScreen from "./screens/WorkoutScreen";
+import AddFriendsScreen from "./screens/AddFriendsScreen";
+import FriendScreen from "./screens/FriendScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,13 +27,13 @@ const router = createBrowserRouter(
       <Route index={true} path="/" element={<HomeScreen />} />
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
-      {/* <Route path="" element={<PrivateRoute />}>
+      <Route path="" element={<PrivateRoute />}>
         <Route path="/mainscreen" element={<MainScreen />} />
         <Route path="/profile" element={<ProfileScreen />} />
         <Route path="/users/workout/:id" element={<WorkoutScreen />} />
         <Route path="/profile/addfriends" element={<AddFriendsScreen />} />
         <Route path="/profile/friends/:friendId" element={<FriendScreen />} />
-      </Route> */}
+      </Route>
     </Route>
   )
 );
